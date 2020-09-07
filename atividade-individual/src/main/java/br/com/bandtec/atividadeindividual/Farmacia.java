@@ -4,17 +4,22 @@ public abstract class Farmacia {
 
     private String nomeRemedio;
     private Integer quantRemedios;
+    private Double valorRemedio;
 
-    public Farmacia(String nomeRemedio, Integer quantRemedios) {
+    public Farmacia(String nomeRemedio, Integer quantRemedios, Double valorRemedio) {
         this.nomeRemedio = nomeRemedio;
         this.quantRemedios = quantRemedios;
+        this.valorRemedio = valorRemedio;
     }
 
-    public abstract  Double getValorFrete();
-    public abstract  Double getValorCompra();
+    public abstract  Double getValorTroco();
 
     public String getNomeRemedio() {
         return nomeRemedio;
+    }
+
+    public Double getValorRemedio() {
+        return valorRemedio;
     }
 
     public Integer getQuantRemedios() {
