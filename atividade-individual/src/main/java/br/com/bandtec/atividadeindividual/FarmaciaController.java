@@ -21,8 +21,15 @@ public class FarmaciaController {
         remedios.add(remedio);
     }
 
-    @DeleteMapping("/remover/{id}")
-   public void removerRemedio(@PathVariable int id) { // remover por ter sido comprado
+    @DeleteMapping("/remover/{id}") // remover caso produto estiver em falta
+   public void removerRemedio(@PathVariable int id) {
         remedios.remove(id-1);
     }
+
+    @PutMapping("/alterar/{id}") // alteração apos fornecedor vender produtos
+    public void alterarRemedio(@PathVariable int id, @RequestBody Fornecedor remedio) {
+        remedios.remove(id-1);
+        remedios.add(id-1, remedio);
+    }
+
 }

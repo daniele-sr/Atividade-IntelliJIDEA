@@ -34,4 +34,8 @@ public abstract class localFarmacia implements Farmacia{
     public Double getValorRemedio() {
         return valorRemedio;
     }
+
+    public void setQuantRemedios(Integer quantRemedios) {
+        this.quantRemedios = quantRemedios;
+    }
 }

@@ -17,4 +17,5 @@ public class Fornecedor extends localFarmacia{
     public Integer getQuntVendidas() {
         return quntVendidas;
     }
+
 }
