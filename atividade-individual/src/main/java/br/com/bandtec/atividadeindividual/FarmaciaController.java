@@ -21,8 +21,8 @@ public class FarmaciaController {
         remedios.add(remedio);
     }
 
-    @DeleteMapping("/excluir/{id}")
-   public void excluirRemedio(@PathVariable int id) { // excluir por que cliente comprou
+    @DeleteMapping("/remover/{id}")
+   public void removerRemedio(@PathVariable int id) { // remover por ter sido comprado
         remedios.remove(id-1);
     }
 }
