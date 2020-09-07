@@ -2,27 +2,19 @@ package br.com.bandtec.atividadeindividual;
 
 public abstract class Farmacia {
 
-    private String nomeRemedio;
-    private Integer quantRemedios;
-    private Double valorRemedio;
+    private String nomeFarmacia;
+    //private String nomeRemedio;
+   // private Integer quantRemedios;
+   // private Double valorRemedio;
 
-    public Farmacia(String nomeRemedio, Integer quantRemedios, Double valorRemedio) {
-        this.nomeRemedio = nomeRemedio;
-        this.quantRemedios = quantRemedios;
-        this.valorRemedio = valorRemedio;
+
+    public Farmacia(String nomeFarmacia) {
+        this.nomeFarmacia = nomeFarmacia;
     }
 
-    public abstract  Double getValorTroco();
+    public abstract  Double getValor();
 
-    public String getNomeRemedio() {
-        return nomeRemedio;
-    }
-
-    public Double getValorRemedio() {
-        return valorRemedio;
-    }
-
-    public Integer getQuantRemedios() {
-        return quantRemedios;
+    public String getNomeFarmacia() {
+        return nomeFarmacia;
     }
 }
